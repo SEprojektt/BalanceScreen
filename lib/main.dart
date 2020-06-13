@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,12 +17,12 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          backgroundColor: Color.fromRGBO(39, 50, 80, 1),
+          backgroundColor: Color.fromRGBO(39, 50, 80, 0.2),
 
           appBar: AppBar(
             title: Text("YOUR BALANCE"),
             centerTitle: true,
-            backgroundColor: Colors.deepPurpleAccent,
+            backgroundColor: Color.fromRGBO(128,128,128,0.2),
           ),
 
           body: TransactionsScreen(),
@@ -83,7 +84,7 @@ class TransactionsScreen extends StatelessWidget{
           child: Container(
             height: 150,
             decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [Colors.purpleAccent, Colors.deepPurpleAccent]),
+                gradient: LinearGradient(colors: [Colors.blueGrey, Color.fromRGBO(41, 69, 93, 0.4)]),
                 borderRadius: BorderRadius.all(Radius.circular(20))
             ),
 
@@ -109,7 +110,7 @@ class TransactionsScreen extends StatelessWidget{
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
-                    color: Color.fromRGBO(55, 65, 104, 1),
+                    color: Color.fromRGBO(60, 63, 65, 0.6),
 
                   ),
                   child: ListTile(
